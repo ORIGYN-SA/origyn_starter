@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "origyn_starter": {
+      "main": "src/origyn_starter/main.mo",
+      "type": "motoko"
+    },
+    "origyn_starter_assets": {
+      "dependencies": [
+        "origyn_starter"
+      ],
+      "frontend": {
+        "entrypoint": "src/origyn_starter_assets/src/index.html"
+      },
+      "source": [
+        "src/origyn_starter_assets/assets",
+        "dist/origyn_starter_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.9.3",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
