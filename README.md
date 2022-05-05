@@ -16,12 +16,35 @@ To learn more before you start working with origyn_starter, see the following do
 - [React Reference](https://reactjs.org)
 - [Material UI](https://mui.com/material-ui/getting-started/installation/)
 
-If you want to start working on your project right away, you might want to try the following commands:
+## Requirements
 
-```bash
-cd origyn_starter/
-dfx help
-dfx config --help
+- Install the following version of the DFINITY Canister SDK
+
+```
+    sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)"
+```
+
+- NodeJS >=16.0.0
+
+## Get Started
+
+With Git and credentials:
+
+```
+git clone https://github.com/ORIGYN-SA/origyn_starter.git
+```
+
+With Git and SSH:
+
+```
+git clone git@github.com:ORIGYN-SA/origyn_starter.git
+```
+
+With NPM:
+
+```
+cd og_starter
+npm install
 ```
 
 ## Running the project locally
