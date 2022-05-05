@@ -1,4 +1,4 @@
-<img src="https://github.com/ORIGYN-SA/origyn_starter/blob/main/src/origyn_starter_assets/assets/origyn_starter_shot.png" />
+<img src="https://github.com/ORIGYN-SA/origyn_starter/blob/main/src/origyn_starter_assets/assets/repo_shot.png" />
 
 # Origyn Starter
 
