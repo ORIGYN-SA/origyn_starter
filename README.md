@@ -1,4 +1,6 @@
-# origyn_starter
+<img src="https://github.com/ORIGYN-SA/origyn_starter/blob/main/src/origyn_starter_assets/assets/origyn_starter_shot.png" />
+
+# Origyn Starter
 
 Welcome to your new origyn_starter project and to the internet computer development community. This template has been customized with Motoko, React and Material UI.
 
