@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Typography, Button } from '@mui/material';
-import { origyn_starter } from '../../../declarations/origyn_starter';
+import { starter } from '../../../declarations/starter';
 import LogoSquare from '../../assets/logo_square.svg';
 
 function HelloPageView() {
@@ -8,7 +8,7 @@ function HelloPageView() {
 
   async function callAnotherCanister() {
     setHelloWorld('Query is in progress...');
-    let hello = await origyn_starter.sayHiFromAnotherCanister();
+    let hello = await starter.sayHiFromAnotherCanister();
     setHelloWorld(hello);
   }
   return (
@@ -23,7 +23,9 @@ function HelloPageView() {
         style={{ height: '20vmin', display: 'block', margin: '2rem 0' }}
         alt="logo"
       />
-      <Typography variant="h4">Make an inter canister call</Typography>
+      <Typography variant="h4">
+        Inter canister call from Internet Computer
+      </Typography>
       <Button
         variant="contained"
         color="primary"

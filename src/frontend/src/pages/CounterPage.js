@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { Box, Typography, Button, LinearProgress } from '@mui/material';
-import { origyn_starter } from '../../../declarations/origyn_starter';
+import { starter } from '../../../declarations/starter';
 import LogoSquare from '../../assets/logo_square.svg';
 
 function CounterPageView() {
@@ -9,7 +9,7 @@ function CounterPageView() {
   const [isDisabled, setIsDisabled] = useState(false);
 
   async function refreshCounter() {
-    const res = await origyn_starter.getValue();
+    const res = await starter.getValue();
     setCount(res.toString());
     setIsDisabled(false);
   }
@@ -21,9 +21,9 @@ function CounterPageView() {
   const onIncrementClick = useCallback(async () => {
     setIsDisabled(true);
     setCount('...');
-    await origyn_starter.increment();
+    await starter.increment();
     refreshCounter();
-  }, [origyn_starter]);
+  }, [starter]);
   return (
     <Box
       margin="6rem 0 0 0"

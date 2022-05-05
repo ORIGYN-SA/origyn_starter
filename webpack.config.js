@@ -38,7 +38,7 @@ const canisterEnvVariables = initCanisterEnv();
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
-const frontendDirectory = 'origyn_starter_assets';
+const frontendDirectory = 'frontend';
 
 const asset_entry = path.join('src', frontendDirectory, 'src', 'index.html');
 

@@ -19,7 +19,7 @@ function HomePageView() {
         Hello Internet Computer + React + Material UI
       </Typography>
       <Typography variant="h6" gutterBottom style={{ margin: '2rem 0' }}>
-        Includes dark theme + 3 ICP examples 🚀🚀🚀
+        Includes dark theme + 4 IC examples 🚀🚀🚀
       </Typography>
       <Box>
         <Typography variant="button">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Typography, Button } from '@mui/material';
-import { origyn_starter } from '../../../declarations/origyn_starter';
+import { starter } from '../../../declarations/starter';
 import LogoSquare from '../../assets/logo_square.svg';
 
 function HelloPageView() {
@@ -8,7 +8,7 @@ function HelloPageView() {
 
   async function queryHelloWorld() {
     setHelloWorld('Query is in progress...');
-    let hello = await origyn_starter.hello();
+    let hello = await starter.hello();
     setHelloWorld(hello);
   }
   return (

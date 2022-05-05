@@ -1,4 +1,4 @@
-import Welcome  "./welcome"
+import Welcome  "canister:welcome";
 
 actor {
     stable var currentValue: Nat = 0;

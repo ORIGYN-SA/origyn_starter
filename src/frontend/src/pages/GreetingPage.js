@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Typography, Button, TextField } from '@mui/material';
-import { origyn_starter } from '../../../declarations/origyn_starter';
+import { starter } from '../../../declarations/starter';
 import LogoSquare from '../../assets/logo_square.svg';
 
 function GreetingPageView() {
@@ -9,7 +9,7 @@ function GreetingPageView() {
   async function doGreet() {
     if (inputStr !== '') {
       setHello('Greeting in progress...');
-      let greeting = await origyn_starter.greet(inputStr);
+      let greeting = await starter.greet(inputStr);
       console.log(greeting);
       setHello(greeting);
     }

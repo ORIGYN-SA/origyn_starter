@@ -1,19 +1,23 @@
 {
   "canisters": {
-    "origyn_starter": {
-      "main": "src/origyn_starter/main.mo",
+    "starter": {
+      "main": "src/backend/starter/main.mo",
       "type": "motoko"
     },
-    "origyn_starter_assets": {
+    "welcome": {
+      "main": "src/backend/welcome/main.mo",
+      "type": "motoko"
+    },
+    "assets": {
       "dependencies": [
-        "origyn_starter"
+        "starter"
       ],
       "frontend": {
-        "entrypoint": "src/origyn_starter_assets/src/index.html"
+        "entrypoint": "src/frontend/src/index.html"
       },
       "source": [
-        "src/origyn_starter_assets/assets",
-        "dist/origyn_starter_assets/"
+        "src/frontend/assets",
+        "dist/frontend"
       ],
       "type": "assets"
     }
