@@ -16,7 +16,7 @@ function HomePageView() {
         alt="logo"
       />
       <Typography variant="h4" gutterBottom>
-        Hello Internet Computer + Vite + React + Material UI
+        Hello Internet Computer + React + Material UI
       </Typography>
       <Typography variant="h6" gutterBottom style={{ margin: '2rem 0' }}>
         Includes dark theme + 3 ICP examples 🚀🚀🚀
