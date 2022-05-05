@@ -27,6 +27,7 @@ export default function Router() {
         { path: '/hello', element: <HelloPage /> },
         { path: '/greeting', element: <GreetingPage /> },
         { path: '/counter', element: <CounterPage /> },
+        { path: '/inter-call', element: <InterCanisterPage /> },
       ],
     },
 
@@ -51,4 +52,7 @@ const HomePage = Loadable(lazy(() => import('../pages/HomePage')));
 const HelloPage = Loadable(lazy(() => import('../pages/HelloPage')));
 const GreetingPage = Loadable(lazy(() => import('../pages/GreetingPage')));
 const CounterPage = Loadable(lazy(() => import('../pages/CounterPage')));
+const InterCanisterPage = Loadable(
+  lazy(() => import('../pages/InterCanisterPage'))
+);
 const NotFound = Loadable(lazy(() => import('../pages/Page404')));

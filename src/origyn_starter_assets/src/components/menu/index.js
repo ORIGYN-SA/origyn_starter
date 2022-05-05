@@ -14,6 +14,7 @@ import GreetingIcon from '@mui/icons-material/EmojiEmotionsRounded';
 import CounterIcon from '@mui/icons-material/ControlPoint';
 import LightIcon from '@mui/icons-material/Brightness7Rounded';
 import DarkIcon from '@mui/icons-material/Brightness4Rounded';
+import CallIcon from '@mui/icons-material/Call';
 import useSite from '../../hooks/useSite';
 
 const Items = [
@@ -36,6 +37,11 @@ const Items = [
     page: 'counter',
     title: 'COUNTER',
     icon: <CounterIcon />,
+  },
+  {
+    page: 'inter-call',
+    title: 'INTER CALL',
+    icon: <CallIcon />,
   },
 ];
 

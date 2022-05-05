@@ -4,4 +4,5 @@ export interface _SERVICE {
   'greet' : (arg_0: string) => Promise<string>,
   'hello' : () => Promise<string>,
   'increment' : () => Promise<undefined>,
+  'sayHiFromAnotherCanister' : () => Promise<string>,
 }

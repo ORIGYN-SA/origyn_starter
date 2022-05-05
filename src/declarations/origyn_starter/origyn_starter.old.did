@@ -3,5 +3,5 @@ service : {
   greet: (text) -> (text);
   hello: () -> (text) query;
   increment: () -> ();
-  sayHiFromAnotherCanister: () -> (text);
+  sayHi: () -> (text);
 }
