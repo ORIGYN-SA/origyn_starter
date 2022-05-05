@@ -1,8 +1,33 @@
 import React from 'react';
 import { Box, Typography, Link } from '@mui/material';
 import LogoSquare from '../../assets/logo_square.svg';
+import {
+  ConnectButton,
+  // ConnectDialog,
+  // Connect2ICProvider,
+  useConnect,
+} from '@connect2ic/react';
 
 function HomePageView() {
+  const {
+    principal,
+    connect,
+    disconnect,
+    isIdle,
+    isConnecting,
+    isConnected,
+    isDisconnecting,
+    activeProvider,
+  } = useConnect({
+    onConnect: () => {
+      // Signed in
+      alert('hello');
+    },
+    onDisconnect: () => {
+      // Signed out
+    },
+  });
+  console.log('principal', principal);
   return (
     <Box
       margin="6rem 0 0 0"
@@ -21,6 +46,7 @@ function HomePageView() {
       <Typography variant="h6" gutterBottom style={{ margin: '2rem 0' }}>
         Includes dark theme + 4 IC examples 🚀🚀🚀
       </Typography>
+      <ConnectButton />
       <Box>
         <Typography variant="button">
           <Link

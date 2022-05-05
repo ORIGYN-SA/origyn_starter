@@ -60,6 +60,7 @@ module.exports = {
     fallback: {
       assert: require.resolve('assert/'),
       buffer: require.resolve('buffer/'),
+      crypto: require.resolve('crypto-browserify'),
       events: require.resolve('events/'),
       stream: require.resolve('stream-browserify/'),
       util: require.resolve('util/'),
@@ -97,6 +98,10 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react'],
           },
         },
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },

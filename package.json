@@ -1,5 +1,5 @@
 {
-  "name": "origyn_starter_assets",
+  "name": "origyn_starter",
   "version": "0.1.0",
   "description": "Internet Computer starter application",
   "keywords": [
@@ -26,6 +26,8 @@
     "babel-loader": "^8.2.5",
     "buffer": "6.0.3",
     "copy-webpack-plugin": "^9.0.1",
+    "crypto-browserify": "^3.12.0",
+    "css-loader": "^6.7.1",
     "events": "3.3.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "5.5.0",
@@ -45,13 +47,15 @@
     "last 2 edge version"
   ],
   "dependencies": {
+    "@connect2ic/core": "^0.0.3",
+    "@connect2ic/react": "^0.0.3",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@mui/icons-material": "^5.6.2",
     "@mui/material": "^5.6.4",
+    "framer-motion": "^4.1.17",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-router-dom": "^6.3.0",
-    "framer-motion": "^4.1.17"
+    "react-router-dom": "^6.3.0"
   }
 }
