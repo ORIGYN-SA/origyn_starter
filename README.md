@@ -8,9 +8,9 @@ To get started, you might want to explore the project directory structure and th
 
 To learn more before you start working with origyn_starter, see the following documentation available online:
 
-- [Quick Start](https://sdk.dfinity.org/docs/quickstart/quickstart-intro.html)
+- [Quick Start](https://smartcontracts.org/docs/current/developer-docs/quickstart/hello10mins)
 - [SDK Developer Tools](https://sdk.dfinity.org/docs/developers-guide/sdk-guide.html)
-- [Motoko Programming Language Guide](https://sdk.dfinity.org/docs/language-guide/motoko.html)
+- [Motoko Programming Language Guide](https://smartcontracts.org/docs/current/developer-docs/build/languages/motoko/)
 - [Motoko Language Quick Reference](https://sdk.dfinity.org/docs/language-guide/language-manual.html)
 - [JavaScript API Reference](https://erxue-5aaaa-aaaab-qaagq-cai.raw.ic0.app)
 - [React Reference](https://reactjs.org)
