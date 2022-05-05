@@ -1,19 +1,19 @@
-import { origyn_starter } from "../../declarations/origyn_starter";
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { SiteProvider } from './context';
+import { HashRouter } from 'react-router-dom';
 
-document.querySelector("form").addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const button = e.target.querySelector("button");
+import App from './App';
 
-  const name = document.getElementById("name").value.toString();
+const container = document.getElementById('app');
+const root = createRoot(container);
 
-  button.setAttribute("disabled", true);
-
-  // Interact with foo actor, calling the greet method
-  const greeting = await origyn_starter.greet(name);
-
-  button.removeAttribute("disabled");
-
-  document.getElementById("greeting").innerText = greeting;
-
-  return false;
-});
+root.render(
+  <React.StrictMode>
+    <SiteProvider>
+      <HashRouter>
+        <App />
+      </HashRouter>
+    </SiteProvider>
+  </React.StrictMode>
+);
