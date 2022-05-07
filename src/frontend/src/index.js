@@ -1,19 +1,29 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { SiteProvider } from './context';
 import { HashRouter } from 'react-router-dom';
+import { defaultProviders } from '@connect2ic/core';
+import { Connect2ICProvider } from '@connect2ic/react';
+// import '@connect2ic/core/style.css';
+
+import * as starter from '../../declarations/starter';
 
 import App from './App';
 
-const container = document.getElementById('app');
-const root = createRoot(container);
-
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <SiteProvider>
-      <HashRouter>
-        <App />
-      </HashRouter>
-    </SiteProvider>
-  </React.StrictMode>
+    <Connect2ICProvider
+      canisters={{
+        starter,
+      }}
+      providers={defaultProviders}
+    >
+      <SiteProvider>
+        <HashRouter>
+          <App />
+        </HashRouter>
+      </SiteProvider>
+    </Connect2ICProvider>
+  </React.StrictMode>,
+  document.getElementById('app')
 );

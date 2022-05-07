@@ -3,16 +3,19 @@ import { Outlet } from 'react-router-dom';
 import { Hidden, Box } from '@mui/material';
 import DashSidebar from './DashSidebar';
 import DashNavbar from './DashNavbar';
+import {
+  // ConnectButton,
+  ConnectDialog,
+  // Connect2ICProvider,
+  // useConnect,
+} from '@connect2ic/react';
 
 export default function DashboardLayout() {
   return (
     <Box
       sx={{
         display: 'flex',
-        // minHeight: '100%',
-        // overflow: 'hidden',
         // backgroundColor: '#00ff',
-        // height: '100vh',
       }}
     >
       <Hidden lgUp>
@@ -31,6 +34,7 @@ export default function DashboardLayout() {
       >
         <Outlet />
       </Box>
+      <ConnectDialog />
     </Box>
   );
 }

@@ -1,17 +1,14 @@
 import React from 'react';
-import {
-  Box,
-  Drawer,
-  AppBar,
-  Toolbar,
-  Typography,
-  Divider,
-} from '@mui/material';
-import Logo from '../../../assets/logo.svg';
-
+import { Box, Drawer, AppBar, Toolbar, Divider } from '@mui/material';
+import OrigynLogo from '../../components/Logo/OrigynLogo';
 import { alpha } from '@mui/system';
-// import useSiteData from '../../hooks/useSiteData';
 import MenuList from '../../components/menu';
+import {
+  ConnectButton,
+  // ConnectDialog,
+  // Connect2ICProvider,
+  // useConnect,
+} from '@connect2ic/react';
 
 export default function DashSidebar() {
   // const { siteData } = useSiteData();
@@ -31,7 +28,11 @@ export default function DashSidebar() {
             alpha(theme.palette.background.default, 0.72),
         }}
       >
-        <Toolbar></Toolbar>
+        <Toolbar>
+          <Box sx={{ marginLeft: 'auto' }}>
+            <ConnectButton />
+          </Box>
+        </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={true}>
         <Box width="320px">
@@ -42,16 +43,9 @@ export default function DashSidebar() {
               padding: '1rem 2rem',
             }}
           >
-            <img
-              style={{
-                marginBottom: '.5rem',
-                cursor: 'pointer',
-                padding: '5px',
-                borderRadius: '10px',
-              }}
-              alt="logo"
-              src={Logo}
-            />
+            <Box sx={{ padding: '8px' }}>
+              <OrigynLogo />
+            </Box>
           </Box>
           <Divider />
           <MenuList />

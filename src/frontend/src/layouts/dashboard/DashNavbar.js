@@ -1,8 +1,13 @@
 import React from 'react';
-import { AppBar, Typography, Toolbar } from '@mui/material';
-
+import { AppBar, Box, Toolbar } from '@mui/material';
 import { alpha } from '@mui/system';
 import MobileDrawer from './MobileDrawer';
+import {
+  ConnectButton,
+  // ConnectDialog,
+  // Connect2ICProvider,
+  // useConnect,
+} from '@connect2ic/react';
 
 export default function DashNavbar() {
   return (
@@ -19,6 +24,9 @@ export default function DashNavbar() {
     >
       <Toolbar>
         <MobileDrawer />
+        <Box sx={{ marginLeft: 'auto' }}>
+          <ConnectButton />
+        </Box>
       </Toolbar>
     </AppBar>
   );

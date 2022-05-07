@@ -43,7 +43,7 @@ git clone git@github.com:ORIGYN-SA/origyn_starter.git
 With NPM:
 
 ```
-cd og_starter
+cd origyn_starter
 npm install
 ```
 
